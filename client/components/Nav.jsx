@@ -5,8 +5,11 @@ class Nav extends Component {
     state={}
     render() {
       return (
-          <header>
+          <header className="menubar">
             <nav className="navbar" id="navbar">
+              <div></div>
+              <div className="navlogo">RIKKE SIMONE JORGENSEN</div>
+                <div className="spacer" />
                 <div className="navbar">
                     <ul>
                         <li>
