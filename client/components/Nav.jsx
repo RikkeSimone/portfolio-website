@@ -1,16 +1,40 @@
 import React, { Component } from "react"
 import { Link } from "react-scroll";
 
+import HamburgerButton from "./HamburgerButton";
+import HamburgerMenu from "./HamburgerMenu"
+import hamburgerMenu from "./HamburgerMenu";
+
 class Nav extends Component {
-    state={}
+    state={
+      hamburgerMenuOpen: false
+    }
+
+    hamburgerClickHandler = () => {
+      this.setState((prevState) => {
+        return {hamburgerMenuOpen: !prevState.hamburgerMenuOpen}
+      })
+    }
+
+    closeClickHandler = () => {
+      this.setState({hamburgerMenuOpen: false})
+    }
     render() {
+      let hamburgerMenu
+
+      if (this.state.hamburgerMenuOpen) {
+        hamburgerMenu = <HamburgerMenu click={this.closeClickHandler}/>
+      }
       return (
           <header className="menubar">
             <nav className="navbar" id="navbar">
-              <div></div>
+              <div>
+                <HamburgerButton hamburgerClickHandler={this.hamburgerClickHandler}/>
+                {hamburgerMenu}
+              </div>
               <div className="navlogo">RIKKE SIMONE JORGENSEN</div>
                 <div className="spacer" />
-                <div className="navbar">
+                <div className="navbar-items">
                     <ul>
                         <li>
                         <Link activeClass="active" to="summary" spy={true} smooth={true} offset={0} duration= {1000}
