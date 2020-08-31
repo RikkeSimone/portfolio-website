@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 
 import HamburgerButton from "./HamburgerButton";
 import HamburgerMenu from "./HamburgerMenu"
-import hamburgerMenu from "./HamburgerMenu";
 
 class Nav extends Component {
     state={
@@ -21,9 +20,11 @@ class Nav extends Component {
     }
     render() {
       let hamburgerMenu
+      let hamburgerButton = ["hamburger-button"]
 
       if (this.state.hamburgerMenuOpen) {
         hamburgerMenu = <HamburgerMenu click={this.closeClickHandler}/>
+        hamburgerButton = ["hamburger-buttonOpen"]
       }
       return (
           <header className="menubar">
@@ -32,32 +33,31 @@ class Nav extends Component {
                 <HamburgerButton hamburgerClickHandler={this.hamburgerClickHandler}/>
                 {hamburgerMenu}
               </div>
-              <div className="navlogo">RIKKE SIMONE JORGENSEN</div>
                 <div className="spacer" />
                 <div className="navbar-items">
                     <ul>
                         <li>
-                        <Link activeClass="active" to="summary" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Kia Ora
+                        <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {1000}
+                        >Hello!
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="skills" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Skills
+                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
+                        >Portfolio
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="experience" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Experience
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration= {1000}
+                        >About me
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="education" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Education
+                        <Link activeClass="active" to="skillset" spy={true} smooth={true} offset={0} duration= {1000}
+                        >Skillset
                         </Link> 
                         </li>
-                        <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Portfolio
+                        <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={0} duration= {1000}
+                        >Resume
                         </Link>
                         </li>
                         <li>
