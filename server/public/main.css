@@ -11,7 +11,7 @@ body {
 /* Nav component */
 
 .menubar {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Emilys Candy', cursive;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,7 +41,7 @@ body {
 }
 
 .navbar li {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 .navbar a {
   color: white;
@@ -131,21 +131,37 @@ body {
 }
 
 .heading {
-  background-color: whitesmoke;
-  color: rgb(3, 3, 3);
-  font-family: 'Major Mono Display', monospace;
-  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Emilys Candy', cursive;
+  font-size: 35px;
   position: absolute;
-  top: 200px;
-  left: 150px;
-  height: 150px;
+  top: 175px;
+  left: 90px;
+  height: 185px;
   width: auto;
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: center;
-  border-radius: 10%;
+  border-radius: 5%;
   overflow: hidden;
   padding: 1%;
 }
+
+/* Portfolio component */
+
+.portfolio-container {
+  background: rgb(58,122,180);
+  background: linear-gradient(90deg, rgba(58,122,180,1) 3%, rgba(29,169,253,0.4318102240896359) 56%, rgba(37,36,36,1) 100%);
+  height: 100vh;
+  width: 100%;
+}
+
+.spacer1 {
+  background-image: url(./images/spacer1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
 
 .skills-container {
   background-color: rgb(245, 237, 193); 
@@ -161,12 +177,6 @@ body {
 
 .about-container {
   background-color: rgb(79, 218, 120); 
-  height: 100vh;
-  width: 100%;
-}
-
-.portfolio-container {
-  background-color: rgb(104, 230, 219);
   height: 100vh;
   width: 100%;
 }
@@ -191,6 +201,7 @@ body {
 
   .heading {
     background-color: whitesmoke;
+    font-size: 18px;
     top: 70px;
     left: 15px;
     opacity: 0.8;

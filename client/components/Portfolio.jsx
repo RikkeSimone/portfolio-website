@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 
-class Portfolio extends Component {
-    state = {}
-    render () {
+const Portfolio = () => {
+
         return <div className='portfolio-container' id="portfolio">
+          <div className="spacer1" />
       </div>
-    } 
-}
+    }
 
 export default Portfolio
