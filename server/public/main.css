@@ -1,30 +1,25 @@
 html {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 100%;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
 }
 
+/* Nav component */
 
 .menubar {
+  font-family: 'Major Mono Display', monospace;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 56px;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   box-shadow: 0 0 20px rgb(24, 23, 23);
-  
+  opacity: 0.9;
 }
 
 .spacer {
@@ -56,7 +51,7 @@ body {
 
 .navbar a:hover,
 .navbar a:active {
-  color: brown;
+  color: rgb(233, 174, 36);
 }
 
 .hamburger-button {
@@ -116,11 +111,15 @@ body {
   color: brown;
 }
 
+/* Hello component */
+
 .hello-container {
   background-color: white;
   height: auto;
   width: 100%; 
   box-shadow: 0 0 20px rgb(24, 23, 23);
+  position: relative;
+  z-index: -1;
 }
 
 .handbutterfly {
@@ -131,11 +130,21 @@ body {
   align-items: center;
 }
 
-
 .heading {
+  background-color: whitesmoke;
+  color: rgb(3, 3, 3);
+  font-family: 'Major Mono Display', monospace;
+  font-size: 18px;
   position: absolute;
   top: 200px;
   left: 150px;
+  height: 150px;
+  width: auto;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 10%;
+  overflow: hidden;
+  padding: 1%;
 }
 
 .skills-container {
@@ -160,7 +169,6 @@ body {
   background-color: rgb(104, 230, 219);
   height: 100vh;
   width: 100%;
-  box-shadow: 10px 0 0 10px teal;
 }
 
 .contact-container {
@@ -169,14 +177,35 @@ body {
   width: 100%;
 }
 
+/* Media queries */
+
 @media (max-width: 767px) {
   .navbar-items {
     display: none;
+  }
+
+  .hello-container {
+    position: relative;
+    z-index: -1;
+  }
+
+  .heading {
+    background-color: whitesmoke;
+    top: 70px;
+    left: 15px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+
+  .hamburger-menu {
+    z-index: 2;
   }
 }
 
 @media (min-width: 768px) {
   .hamburger-button {
     display: none;
-  }
+  } 
 }

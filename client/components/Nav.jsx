@@ -37,12 +37,12 @@ class Nav extends Component {
                 <div className="navbar-items">
                     <ul>
                         <li>
-                        <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {1000}
+                        <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {2000}
                         >Hello!
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
+                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {2000}
                         >Portfolio
                         </Link>
                         </li>
