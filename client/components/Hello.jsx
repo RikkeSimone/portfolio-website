@@ -9,7 +9,7 @@ const Hello = () => {
     }, [])
 
     return <div className= "hello-container" id="hello">
-            <img className="handbutterfly" src="../images/handbutterfly.png" alt="image of a hand releasing multiple butterflies" />
+            <img className="landingimg" src="../images/landingpage.jpg" alt="image of a hand releasing multiple butterflies" />
            <div className="heading">
             <h2>Rikke Simone Jorgensen</h2>
             <h3>Full Stack Web Developer</h3>
