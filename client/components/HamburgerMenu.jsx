@@ -10,19 +10,14 @@ const hamburgerMenu = props => (
             </Link>
             </li>
             <li>
-            <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
-            onClick={props.click}>Portfolio
-            </Link>
-            </li>
-            <li>
             <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration= {1000}
             onClick={props.click}>About me
             </Link>
             </li>
             <li>
-            <Link activeClass="active" to="skillset" spy={true} smooth={true} offset={0} duration= {1000}
-            onClick={props.click}>Skillset
-            </Link> 
+            <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
+            onClick={props.click}>Portfolio
+            </Link>
             </li>
             <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={0} duration= {1000}
             onClick={props.click}>Resume

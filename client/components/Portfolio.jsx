@@ -1,12 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { Component } from 'react'
+import { Carousel } from 'react-responsive-carousel';
 
-const Portfolio = () => {
 
-        return <div className='portfolio-container' id="portfolio">
-          <div>
-            <h2 className="portfolioheading">Portfolio</h2>
+class Portfolio extends Component {
+  render () {
+        return (
+        <div className='portfolio-container' id="portfolio">
+          <div className="spacer">
+            <img src="../../images/spacer1.jpg" />
           </div>
+          <Carousel>
               <div className="content">
+              <h2 className="portfolioheading">Portfolio 1</h2>
                 <h3>Pawsome Pack Adventures</h3>
                 <img className="portfolioimg" src="../../images/portfolio/pawsomepackadventures.jpg" />
                 <p>A website for a pack walking business</p>
@@ -16,6 +21,7 @@ const Portfolio = () => {
             </div>
             
             <div className="content">
+            <h2 className="portfolioheading">Portfolio 2</h2>
                 <h3>Kiwi Roadies</h3>
                 <img className="portfolioimg" src="../../images/portfolio/kiwiroadies-front.jpg" />
                 <p>An interactive roadtrip planner</p>
@@ -24,7 +30,9 @@ const Portfolio = () => {
                   <button className="portfoliobutton">Website</button>
                   <button className="portfoliobutton">GitHub Repo</button>
             </div>
-      </div>
-    }
+            </Carousel>
+            </div>
+        )}
+      }
 
 export default Portfolio

@@ -42,19 +42,14 @@ class Nav extends Component {
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {2000}
-                        >Portfolio
-                        </Link>
-                        </li>
-                        <li>
                         <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration= {1000}
                         >About me
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="skillset" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Skillset
-                        </Link> 
+                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {2000}
+                        >Portfolio
+                        </Link>
                         </li>
                         <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={0} duration= {1000}
                         >Resume
