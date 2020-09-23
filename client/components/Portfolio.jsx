@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
 
-
-class Portfolio extends Component {
-  render () {
+const Portfolio = () => {
         return (
         <div className='portfolio-container' id="portfolio">
           <div className="spacer">
             <img src="../../images/spacer1.jpg" />
           </div>
-          <Carousel>
               <div className="content">
               <h2 className="portfolioheading">Portfolio 1</h2>
                 <h3>Pawsome Pack Adventures</h3>
@@ -30,9 +26,7 @@ class Portfolio extends Component {
                   <button className="portfoliobutton">Website</button>
                   <button className="portfoliobutton">GitHub Repo</button>
             </div>
-            </Carousel>
             </div>
         )}
-      }
 
 export default Portfolio

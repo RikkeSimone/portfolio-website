@@ -18,6 +18,7 @@ class Nav extends Component {
     closeClickHandler = () => {
       this.setState({hamburgerMenuOpen: false})
     }
+    
     render() {
       let hamburgerMenu
       let hamburgerButton = ["hamburger-button"]
@@ -37,7 +38,7 @@ class Nav extends Component {
                 <div className="navbar-items">
                     <ul>
                         <li>
-                        <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {2000}
+                        <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {1000}
                         >Hello!
                         </Link>
                         </li>
@@ -47,11 +48,12 @@ class Nav extends Component {
                         </Link>
                         </li>
                         <li>
-                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {2000}
+                        <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration= {1000}
                         >Portfolio
                         </Link>
                         </li>
-                        <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={0} duration= {1000}
+                        <li>
+                        <Link activeClass="active" to="resume" spy={true} smooth={true} offset={0} duration= {1000}
                         >Resume
                         </Link>
                         </li>
