@@ -6,7 +6,7 @@ const hamburgerMenu = props => (
         <ul>
         <li>
             <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {1000}
-            onClick={props.click}>Hello!
+            onClick={props.click}>Home
             </Link>
             </li>
             <li>

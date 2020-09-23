@@ -19,10 +19,7 @@ export default function Contact () {
 }
         return (
         <div className='contact-container' id="contact">
-          <div className="spacer">
-            <img src="../../images/spacer4.jpg" />
-          </div>
-          <div className="contactform">
+          <div className="contactcontent">
           <form className="contactform" onSubmit={sendEmail}>
             <input type="hidden" name="contact_number" />
             <div className="field">

@@ -5,8 +5,8 @@ const Hello = () => {
     return <div className= "hello-container" id="hello">
             <video src='/images/video.mp4' autoPlay loop muted />
            <div className="heading">
-            <h2 className="mainheading">Rikke Simone Jorgensen</h2>
-            <h3 className="miniheading">Your Full Stack Developer</h3>
+            <h3 className="miniheading">RIKKE JORGENSEN</h3>
+            <p>- Your fullstack developer</p>
             </div>
         </div>
     } 

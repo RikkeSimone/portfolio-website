@@ -24,12 +24,14 @@
     ]
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "emailjs": "^3.3.0",
     "emailjs-com": "^2.6.3",
     "express": "^4.17.1",
     "file-saver": "^2.0.2",
     "jquery-parallax.js": "^1.5.0",
     "materialize-css": "^1.0.0-rc.2",
+    "react-animate-on-scroll": "^2.1.5",
     "react-responsive-carousel": "^3.2.9",
     "react-scroll": "^1.8.1",
     "sweetalert": "^2.1.2"

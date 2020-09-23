@@ -18,7 +18,7 @@ class Resume extends Component {
     render () {
         return <div className='contact-container' id="resume">
           <div className="spacer">
-            <img src="../../images/spacer3.jpg" />
+            <img className="spacerimg" src="../../images/spacer3.jpg" />
           </div>
           <div id="pdf-div" className="sized-container-div"/>
       </div>

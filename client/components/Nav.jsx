@@ -39,7 +39,7 @@ class Nav extends Component {
                     <ul>
                         <li>
                         <Link activeClass="active" to="hello" spy={true} smooth={true} offset={0} duration= {1000}
-                        >Hello!
+                        >Home
                         </Link>
                         </li>
                         <li>
